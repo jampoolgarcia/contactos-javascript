@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact book</title>
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,11 +15,11 @@
 <body>
     <div class="container">
         <h2>Contact Book Web</h2>
-        <form action="">
+        <form class="form-contact" action="">
             <input type="text" name="name" id="name" placeholder="Input name">
             <input type="tel" name="phone" id="phone" placeholder="Input phone">
             <input type="text" name="address" id="address" placeholder="Input address">
-            <button class="btn-save">Save</button>
+            <button class="btn-save">Save contact</button>
         </form>
 
         <!-- List contact -->
@@ -27,7 +28,13 @@
                 <h3>Name</h3>
                 <p>Phone</p>
                 <p>Address</p>
-                <span class="material-icons">delete_forever</span>
+                <span class="material-icons warn">delete_forever</span>
+            </div>
+            <div class="contact">
+                <h3>Name</h3>
+                <p>Phone</p>
+                <p>Address</p>
+                <span class="material-icons warn">delete_forever</span>
             </div>
         </div>
     </div>
