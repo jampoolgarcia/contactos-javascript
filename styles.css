@@ -41,29 +41,41 @@ body {
     margin: 1rem 0;
     line-height: 3rem;
     color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.form-contact input:active {
+.form-contact input:valid{
     border-bottom: 1px darkgreen solid;
 }
 
-.form-contact input:focus {
-    border-bottom: 1px darkgreen solid;
-}
-
-.form-contact button{
+.btn-save{
     margin: 1rem 0;
-    background-color: darkgreen;
+    background: transparent;
+    border: 2px darkgreen solid;
     outline: 0;
-    border: 0;
     height: 3rem;
     color: #fff;
     border-radius: 5px;
     text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.btn-save:hover{
+    background-color: darkgreen;
+}
+
+.btn-save:active{
+    -webkit-transform: translate(5px, 5px);
+    transform: translate(5px, 5px);
 }
 
 .list-contact {
-    width:50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
@@ -73,10 +85,26 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 4rem;
+    border-top: 1px gray solid;
+    padding: 0.5rem;
 }
 
 .warn {
     color: tomato;
     cursor: pointer;
+    font-size: 2rem !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    transform: translate(0,0);
 }
+
+.warn:hover{
+    transform: translate(-0.5px, -0.5px);
+}
+
+.warn:active{
+    transform: translate(0,0);
+}
+
